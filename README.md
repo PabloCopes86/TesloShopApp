@@ -1,59 +1,24 @@
-# TesloShop
+# Teslo Shop App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+Permite a los usuarios explorar diferentes estilos y productos de moda. Con un panel administrativo intuitivo, los administradores pueden gestionar fácilmente el contenido y las operaciones de la tienda. La aplicación ofrece una interfaz moderna y fácil de usar, ideal para cualquier persona que busque renovar su vestuario.
 
-## Development server
+## Características
 
-To start a local development server, run:
+- Página de Login y Register
+- Panel administrativo para gestionar productos
+- Acceso al panel administrativo: **test1@google.com** y contraseña: **Abc123** (considerando mayúsculas).
+- Hecho con **Angular 19.1.4**.
 
-```bash
-ng serve
-```
+## Instalación
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. Clonar el proyecto
+2. Ejecutar ```npm install```
+3. Clonar el backend: [TesloShopBackend](https://github.com/PabloCopes86/TesloShopBackend) y seguir las instrucciones del README
+4. Ejecutar la app:
+   ```bash
+   npm start
+   ```
+   O bien:
+   ```bash
+   ng serve -o
+   ```
