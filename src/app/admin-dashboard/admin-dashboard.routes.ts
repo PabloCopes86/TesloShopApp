@@ -11,7 +11,7 @@ export const adminDashboardRoutes: Routes = [
     canMatch: [IsAdminGuard],
     children: [
       { path: 'products', component: ProductsAdminPageComponent },
-      { path: 'product/:id', component: ProductAdminPageComponent },
+      { path: 'products/:id', component: ProductAdminPageComponent },
       { path: '**', redirectTo: 'products' },
     ],
   },

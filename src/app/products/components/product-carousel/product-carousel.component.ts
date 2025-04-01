@@ -34,7 +34,7 @@ export class ProductCarouselComponent implements AfterViewInit {
     const element = this.swiperDiv().nativeElement;
     if (!element) return;
 
-    console.log({ element });
+    // console.log({ element });
 
     const swiper = new Swiper(element, {
       // Optional parameters

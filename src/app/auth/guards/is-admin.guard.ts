@@ -13,7 +13,7 @@ export const IsAdminGuard: CanMatchFn = async (
 
   await firstValueFrom(authService.checkStatus());
 
-  console.log('Is Admin?', authService.isAdmin());
+  // console.log('Is Admin?', authService.isAdmin());
 
   return authService.isAdmin();
 };
