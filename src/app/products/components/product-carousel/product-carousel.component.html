@@ -1,17 +1,25 @@
 <!-- Slider main container -->
-<div class="swiper" #swiperDiv>
+<div class="swiper w-full max-w-[100vw] max-h-[420px]" #swiperDiv>
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
     @for (image of images(); track $index) {
-    <div class="swiper-slide">
+    <div class="swiper-slide h-full">
       <img
         [src]="image | productImage"
         alt="Producto"
-        class="w-full object-cover animate-fadeIn"
+        class="w-full h-full object-cover animate-fadeIn"
       />
     </div>
-    } ...
+    } @empty {
+    <div class="swiper-slide h-full">
+      <img
+        [src]="null | productImage"
+        alt="Producto"
+        class="w-full h-full object-cover animate-fadeIn"
+      />
+    </div>
+    }
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination"></div>

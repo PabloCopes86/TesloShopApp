@@ -3,7 +3,7 @@ import { rxResource, toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductsService } from '@products/services/products.service';
 import { map } from 'rxjs';
-import { ProductDetailsComponent } from "./product-details/product-details.component";
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @Component({
   selector: 'app-product-admin-page',
@@ -22,7 +22,7 @@ export class ProductAdminPageComponent {
   productResource = rxResource({
     request: () => ({ id: this.productId() }),
     loader: ({ request }) => {
-      return this.productService.getProductByIdSlug(request.id);
+      return this.productService.getProductById(request.id);
     },
   });
 

@@ -6,10 +6,16 @@ const BASE_URL = environment.baseUrl;
   name: 'productImage',
 })
 export class ProductImagePipe implements PipeTransform {
-  transform(value: string | string[]): any {
+  transform(value: null | string | string[]): any {
     const noImage = './assets/images/no-image.jpg';
-    const image = value.at(0);
+    const image = value?.at(0);
 
+    if (value === null) {
+      return noImage;
+    }
+    if (typeof value === 'string' && value.startsWith('blob:')) {
+      return value;
+    }
     if (typeof value === 'string') {
       return `${BASE_URL}/files/product/${value}`;
     }

@@ -1,6 +1,6 @@
-@import "tailwindcss";
+@import "tailwindcss" layer(base);
 @plugin "daisyui" {
-  themes: night --default;
+  themes: night;
 }
 @theme {
   --font-montserrat: "Montserrat", "sans-serif";
