@@ -13,8 +13,9 @@ Permite a los usuarios explorar diferentes estilos y productos de moda. Con un p
 
 1. Clonar el proyecto
 2. Ejecutar ```npm install```
-3. Clonar el backend: [TesloShopBackend](https://github.com/PabloCopes86/TesloShopBackend) y seguir las instrucciones del README
-4. Ejecutar la app:
+3. Cambiar el URL de la variable de entorno de environments.ts  ```baseUrl: 'http://localhost:3000/api'```
+4. Clonar el backend: [TesloShopBackend](https://github.com/PabloCopes86/TesloShopBackend) y seguir las instrucciones del README
+5. Ejecutar la app:
    ```bash
    npm start
    ```
